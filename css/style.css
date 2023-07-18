@@ -8,7 +8,9 @@
 a{
     text-decoration: none;
 }
-
+ul{
+    list-style: none;
+}
 /* nav style */
 nav{
     display: flex;
@@ -54,14 +56,77 @@ nav{
     margin: 0 10px;
 }
 
-
+/* banner style */
+.banner-container{
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+.banner-content, .banner-image{
+    width: 50%;
+}
+.banner-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.banner-title{
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.goat{
+    background: -webkit-linear-gradient(#B952D6, #FF42A5);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 58px;
+   
+}
+.fa-play , .fa-download, .fa-user{
+    color: #FF42A5;
+    margin-right: 10px;
+}
+.banner-list li{
+    margin-bottom: 15px;
+    color: var(--primary-text-color);
+    font-weight: bold;
+}
+.banner-content button{
+    padding: 15px 40px;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.sign-in-btn{
+    background-color: #FF42A5;
+    margin-right: 20px;
+}
+.go-rogue-btn{
+    background-color: #4EC5F7;
+}
+.banner-image{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+.banner-image img{
+    height: 90%;
+    width: 90%;
+  
+}
 /* responsive Style */
 /* Responsive For small device */
 @media screen and (max-width:576px) {
+  
     nav{
         padding:20px 0px;
-    }
-    nav{
         flex-direction: column;
         text-align: center;
     }
@@ -69,6 +134,24 @@ nav{
         flex-direction: column;
         gap: 10px;
     }
+    .banner-container{
+        flex-direction: column-reverse;
+        padding: 20px;
+        height: auto;
+        gap: 50px;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-image{
+        width: 100%;
+        justify-content: center;
+
+    }
+    .sign-in-btn{
+        margin-right: 5px;
+    }
+  
 }
 
 /* Responsive for medium device */
@@ -79,5 +162,20 @@ nav{
         text-align: center;
         gap: 20px;
      }
-    
+     
+     .banner-container{
+        flex-direction: column-reverse;
+        padding: 20px;
+        height: auto;
+        gap: 50px;
+    }
+    .banner-content{
+        width: 100%;
+        padding: 50px 0;
+    }
+    .banner-image{
+        width: 100%;
+        justify-content: center;
+
+    }
 }
