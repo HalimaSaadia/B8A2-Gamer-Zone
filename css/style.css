@@ -1,3 +1,83 @@
-title{
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-text-color: #3E3751
+}
+a{
+    text-decoration: none;
+}
+
+/* nav style */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-title{
+    font-size: 32px;
+    font-weight: bolder;
+}
+.G{
+    color: #FF42A5;
+}
+
+.logo img{
+    margin-right: 20px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.menu li{
+    padding: 20px;
+}
+.menu li a{
+ color: var(--primary-text-color);
+ font-size: 20px;
+ font-weight: bold;
+}
+.follow-us{
+    background-color: #E7E6E9;
+    border-radius: 10px;
+    
+}
+.fa-youtube{
     color: red;
+    margin: 0 10px;
+}
+
+
+/* responsive Style */
+/* Responsive For small device */
+@media screen and (max-width:576px) {
+    nav{
+        padding:20px 0px;
+    }
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Responsive for medium device */
+@media screen and (min-width:576px) and (max-width:993px) {
+     nav{
+        padding: 20px ;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+     }
+    
 }
