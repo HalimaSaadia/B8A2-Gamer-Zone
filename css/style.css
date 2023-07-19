@@ -224,7 +224,8 @@ nav{
     align-items: center;
     justify-content: end;
     padding: 20px 100px;
-    height: 500px;
+    max-height: 700px;
+    margin-bottom: 100px;
 }
 .play-instantly-content{
     text-align: right;
@@ -258,7 +259,6 @@ nav{
     gap: 10px;
     align-items: center;
     padding: 20px 100px;
-    margin-top: 80px;
 }
 
 .game-container{
