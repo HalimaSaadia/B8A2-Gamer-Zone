@@ -211,6 +211,7 @@ nav{
     width: 200px;
     position: relative;
     margin: auto;
+    cursor: pointer;
 }
 .playbutton{
     position: absolute;
@@ -220,6 +221,15 @@ nav{
     color: white;
     z-index: 1;
     display: none;
+}
+.image-container p{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 35%;
+    color: #FF42A5;
+ 
+   
 }
 .image-container::before{
     content: "";
@@ -242,6 +252,11 @@ nav{
 
 .image-container:hover .playbutton{
     display: block;
+    z-index: 1;
+}
+.image-container:hover .watch-now{
+    display: block;
+    z-index: 1;
 }
 /* Play Instantly */
 .play-instantly-container{
@@ -280,32 +295,14 @@ nav{
 }
 .games-container{
     display: flex;
-    /* grid-template-columns: repeat(5, 1fr);
-     */
-     flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     align-items: center;
     padding:100px;
-    border: 2px solid black;
-}
-/* .game-first-row{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-    padding: 20px 100px;
+
 }
 
-.game-second-row{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-    padding: 20px 100px;
-} */
 
 .game-container{
     display: flex;
@@ -316,14 +313,18 @@ nav{
    
 }
 
-.game-container p{
-    padding-top: 15px;
+.game-container a{
     margin-left: 10px;
+    padding: 0 10px;
 }
 .game-container:hover{
     border: 2px solid #FF42A5;
     cursor: pointer;
+    color: #FF42A5;
     border-radius: 60px;
+}
+.game-container:hover a{
+    color: #FF42A5;
 }
 footer{
     padding: 20px 250px;
@@ -369,6 +370,7 @@ footer{
     text-align: center;
     margin-top: 20px;
 }
+
 
 /* responsive Style */
 /* Responsive For small device */
@@ -445,16 +447,20 @@ footer{
         gap: 5px;
     }
 
-    .game-container p{
+    .game-container a{
         font-size: 10px;
-        margin-left: 5px;
+        margin-left: 0px;
+        padding: 0;
 
     }
+    
     .game-image{
         height: 25px;
         width: 25px;
     }
-
+    .image-container p{
+        left:  40%;
+    }
     .play-instantly-main{
         width: 80%;
     }
@@ -502,7 +508,7 @@ footer{
     }
     .banner-content{
         width: 100%;
-        padding: 50px;
+        padding: 20px;
     }
     .banner-image{
         width: 100%;
@@ -540,6 +546,9 @@ footer{
         height: 250px;
         width: 250px;
     }
+    .image-container p{
+        left:  10%;
+    }
     .online-games-card-container img{
         width: 250px;
         height: 250px;
@@ -549,10 +558,11 @@ footer{
     }
 
     .games-container{
-   
-        padding: 50px 10px;
+     padding: 50px 10px;
        gap: 5px;
+
     }
+  
     .game-image{
         height: 40px;
         width: 40px;
