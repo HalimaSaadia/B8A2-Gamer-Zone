@@ -276,8 +276,50 @@ nav{
     cursor: pointer;
     border-radius: 60px;
 }
+footer{
+    padding: 20px 250px;
+    background: #0B0223;
+}
+.footer-gamer{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.footer-gamer img{
+   margin-right: 20px;     
+}
+.footer-top-list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 50px 0;
+}
+.footer-top-list li{
+    text-align: center;
+}
+.footer-top-list a, .footer-icon-list a{
+    color: white;
+}
+.footer-icon-list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 24px;
+}
 
-
+.footer-bottom-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 40px 100px;
+    text-align: center;
+}
+.footer-bottom-list li a, .footer-copyright{
+    color:rgba(255, 255, 255, 0.60);
+}
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+}
 
 /* responsive Style */
 /* Responsive For small device */
@@ -367,7 +409,27 @@ nav{
         width: 30%;
         margin-left: 50px;
     }
-   
+    footer{
+        padding: 50px;
+    }
+    .footer-top-list{
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .footer-top-list li{
+        text-align: center;
+    }
+    .footer-top-list a{
+        font-size: 12px;
+    
+    }
+    .footer-bottom-list{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        margin-top: 40px;
+        gap: 20px;
+        font-size: 12px;
+    }
 }
 
 /* Responsive for medium device */
@@ -437,6 +499,21 @@ nav{
         height: 40px;
         width: 40px;
     }
-    
+    footer{
+        padding: 20px 100px;
+    }
+  
+    .footer-top-list li{
+        text-align: center;
+    } *
+    .footer-top-list a{
+        font-size: 14px;
+    }
+   
+    .footer-bottom-list{
+        padding: 0;
+        margin-top: 40px;
+        font-size: 14px;
+    }
     
 }
