@@ -271,6 +271,7 @@ nav{
 .play-instantly-content{
     text-align: right;
     margin-right: 100px;
+    
 }
 .no-install, .no-download{
     display: block;
@@ -281,6 +282,7 @@ nav{
     justify-content: right;
     position: relative;
     padding: 0px 20px;
+    
 }
 .play-instantly-small{
     height: 50%;
@@ -438,6 +440,10 @@ footer{
     .play-instantly-content{
         margin-right: 0;
         text-align: center;
+
+    }
+    .play-instantly-container{
+        margin-bottom: 50px;
     }
 
     .games-container{
@@ -555,6 +561,8 @@ footer{
     }
     .play-instantly-container{
         padding: 20px;
+        margin-bottom: 0;
+       
     }
 
     .games-container{
@@ -584,4 +592,10 @@ footer{
         font-size: 14px;
     }
     
+}
+
+@media screen and (min-width:1500px)  {
+    .play-instantly-container{
+        margin-bottom: 500px;
+    }
 }
